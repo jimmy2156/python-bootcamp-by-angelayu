@@ -1,7 +1,25 @@
-total_amount = int(input("Welcome to the tip calculator. What was the bill? "))
-tip_percentage = int(input("What percentage tip would you like to give? 10, 12, or 15 "))
-split = int(input("How many people to split the bill? "))
-total_bill_split = total_amount * tip_percentage / 100
-total_bill_add = total_amount + total_bill_split
-each_person_pay = round(total_bill_add / split, 2)
-print(f"Each person should pay: {each_person_pay}")12
+
+import random
+
+
+# word_list = ['ardak', 'john', 'susan']
+# random_words = random.choice(word_list)
+
+# letter = input("Guess a word: ").lower()
+
+# for word in random_words:
+#     if word == letter:
+#         print("right")
+#     else:
+#         print("wrong")
+new_list = list('_')
+new_word = "babbon"
+for letter in new_word:
+    new_list.append('_')
+    
+print(new_list)
+new_letter = "b"
+position_of_word = new_word.index(new_letter)
+print(position_of_word)
+
+
