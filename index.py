@@ -12,14 +12,19 @@ import random
 #         print("right")
 #     else:
 #         print("wrong")
+new_word = input("Guess the word").lower()
 new_list = list('_')
-new_word = "babbon"
+
 for letter in new_word:
     new_list.append('_')
     
 print(new_list)
-new_letter = "b"
-position_of_word = new_word.index(new_letter)
-print(position_of_word)
+guess = input("Guess the letter: ").lower()
+print(len(new_list))
+for position in range(len(new_word)):
+    letter = new_word[position]
+    if letter == guess:
+      new_list[position] = letter
 
+print(new_list)
 
